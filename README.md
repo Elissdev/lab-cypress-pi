@@ -1,4 +1,4 @@
-# Laboratório de QA - Automação de Frontend com Cypress
+# Laboratório de QA - Automação de Frontend com Cypress (PI)
 
 ![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/SEU_USUARIO/SEU_REPOSITORIO/cypress.yml?branch=main)
 ![Cypress](https://img.shields.io/badge/Cypress-15.14.0-green)
