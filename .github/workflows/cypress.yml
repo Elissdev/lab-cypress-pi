@@ -1,0 +1,49 @@
+name: Cypress Tests
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  cypress-run:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          cache: 'npm'
+
+      - name: Cache Cypress binary
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/Cypress
+          key: cypress-${{ runner.os }}-${{ hashFiles('package-lock.json') }}
+          restore-keys: |
+            cypress-${{ runner.os }}-
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Start static server
+        run: npx serve -s . -l 3000 &
+        env:
+          # Para evitar logs excessivos
+          NODE_ENV: production
+
+      - name: Wait for server
+        run: npx wait-on http://localhost:3000 --timeout 60000
+
+      - name: Run Cypress tests
+        run: npm run cypress:run
+        env:
+          # Opcional: definir variáveis de ambiente para Cypress
+          CYPRESS_baseUrl: http://localhost:3000
+
+      # O servidor será terminado automaticamente ao final do job

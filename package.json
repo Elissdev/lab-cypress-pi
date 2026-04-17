@@ -1,0 +1,23 @@
+{
+  "name": "lab-cypress-pi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "cypress:test": "cypress run --spec \"cypress/e2e/login.cy.js\"",
+    "start": "serve -s . -l 3000",
+    "test:e2e": "start-server-and-test start http://localhost:3000 cypress:run"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "cypress": "^15.14.0",
+    "serve": "^14.2.0",
+    "wait-on": "^7.2.0",
+    "start-server-and-test": "^2.0.3"
+  }
+}
