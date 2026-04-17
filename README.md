@@ -7,7 +7,7 @@
 
 Este projeto é um laboratório prático de **Quality Assurance (QA)** focado em automação de testes de frontend. O objetivo é demonstrar boas práticas de automação utilizando **Cypress** para validar uma aplicação web moderna de formulário de login, com testes de funcionalidade, validação de campos, responsividade e integração contínua.
 
-## 📋 Visão Geral
+## Visão Geral
 
 O projeto consiste em:
 - Uma página de login responsiva e moderna (`index.html`)
@@ -16,7 +16,7 @@ O projeto consiste em:
 - Testes de responsividade para múltiplos dispositivos
 - Validação de formulários e interações do usuário
 
-## 🛠️ Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 | Tecnologia | Versão | Propósito |
 |------------|--------|-----------|
@@ -29,7 +29,7 @@ O projeto consiste em:
 | **GitHub Actions** | - | Pipeline de Integração Contínua |
 | **Ubuntu** | latest | Ambiente de execução dos testes CI |
 
-## 🧪 O que os Testes Validam
+## O que os Testes Validam
 
 ### 1. **Testes Funcionais do Formulário de Login**
    - Login com credenciais fictícias
@@ -55,7 +55,7 @@ O projeto consiste em:
    - Feedback visual ao interagir
    - Navegação por teclado (implícito nos testes de foco)
 
-## 📁 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```
 lab-cypress-pi/
@@ -72,7 +72,7 @@ lab-cypress-pi/
 └── README.md                    Este arquivo
 ```
 
-## 🚀 Como Executar o Projeto Localmente
+## Como Executar o Projeto Localmente
 
 ### Pré-requisitos
 
@@ -116,7 +116,7 @@ lab-cypress-pi/
    npm run cypress:open
    ```
 
-## 🧪 Execução dos Testes
+## Execução dos Testes
 
 ### Testes Disponíveis
 ```bash
@@ -142,7 +142,7 @@ npm start
 - **Teste de Responsividade**: Testa em múltiplos dispositivos
 - **Teste de UI**: Confirma presença e estado dos elementos
 
-## 🔄 Integração Contínua (CI/CD)
+## Integração Contínua (CI/CD)
 
 O projeto utiliza **GitHub Actions** para executar os testes automaticamente em cada `push` ou `pull_request` na branch `main`.
 
@@ -159,7 +159,7 @@ O projeto utiliza **GitHub Actions** para executar os testes automaticamente em 
 - ❌ **Falha**: Um ou mais testes falharam
 - ⚠️ **Cancelado**: Workflow interrompido manualmente
 
-## 📊 Resultados dos Testes
+## Resultados dos Testes
 
 Os testes incluem:
 - **100% de cobertura** das funcionalidades principais
@@ -167,7 +167,7 @@ Os testes incluem:
 - **Validação cross-browser** (via Cypress)
 - **Tempo de execução**: ~30 segundos no CI
 
-## 🎯 Objetivos de Aprendizado
+## Objetivos de Aprendizado
 
 Este laboratório foi projetado para demonstrar:
 
@@ -177,7 +177,7 @@ Este laboratório foi projetado para demonstrar:
 4. **Boas práticas de QA** em desenvolvimento web
 5. **Integração** de testes automatizados no fluxo de desenvolvimento
 
-## 🤝 Contribuindo
+## Contribuindo
 
 1. Faça um fork do projeto
 2. Crie uma branch para sua feature (`git checkout -b feature/nova-feature`)
@@ -185,11 +185,11 @@ Este laboratório foi projetado para demonstrar:
 4. Push para a branch (`git push origin feature/nova-feature`)
 5. Abra um Pull Request
 
-## 📝 Licença
+## Licença
 
 Este projeto é licenciado sob a licença ISC - veja o arquivo [LICENSE](LICENSE) para detalhes.
 
-## 🔧 Personalização
+## Personalização
 
 Antes de usar este projeto, substitua os placeholders no README:
 - `SEU_USUARIO/SEU_REPOSITORIO` pelo seu username/nome do repositório
